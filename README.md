@@ -20,6 +20,10 @@ The app features two main screens:
 - **Tasks Tab**: Main task management interface with add/complete/delete functionality
 - **Stats Tab**: Analytics showing total tasks, completed tasks, active tasks, and completion percentage
 
+| Task Tab | Stats Tab |
+|------------|-----------|
+| <img src="./screenshots/tasks-tab.png" alt="Tasks Tab" width="350"> | <img src="./screenshots/stats-tab.png" alt="Stats Tab" width="350"> |
+
 ## Tech Stack
 
 - **React Native**: Cross-platform mobile development framework
