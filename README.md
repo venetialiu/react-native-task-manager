@@ -1,50 +1,86 @@
-# Welcome to your Expo app 👋
+# Task Manager App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A clean and intuitive Task Manager app built with React Native and Expo that allows users to efficiently manage their daily tasks.
 
-## Get started
+## Features
 
-1. Install dependencies
+### Core Functionality
+- **Add Tasks**: Create new tasks with descriptive text
+- **Mark Complete**: Toggle tasks between complete and incomplete states
+- **Delete Tasks**: Remove tasks from your list
+- **Task List**: View all tasks in an organized, scrollable list
 
+### Enhanced Features
+- **Statistics Dashboard**: Real-time tracking of task completion metrics
+- **Dark/Light Mode**: Automatic theme switching based on system preferences
+
+## Screenshots
+
+The app features two main screens:
+- **Tasks Tab**: Main task management interface with add/complete/delete functionality
+- **Stats Tab**: Analytics showing total tasks, completed tasks, active tasks, and completion percentage
+
+## Tech Stack
+
+- **React Native**: Cross-platform mobile development framework
+- **Expo**: Development platform and toolchain
+- **TypeScript**: Type-safe JavaScript development
+
+## Getting Started
+
+### Prerequisites
+- Node.js (14 or newer)
+- npm or yarn
+- Expo CLI (optional, but recommended)
+- iOS Simulator or Android Emulator (for testing)
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <your-repository-url>
+   cd taskmanagerapp
+   ```
+
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. **Start the development server**
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. **Run on your platform**
+   - Install Expo Go app and scan the QR code
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Project Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+taskmanagerapp/
+├── app/
+│   ├── (tabs)/
+│   │   ├── index.tsx          # Main tasks screen
+│   │   ├── stats.tsx          # Statistics screen
+│   │   └── _layout.tsx        # Tab navigation layout
+│   ├── _layout.tsx            # Root layout with providers
+│   ├── +not-found.tsx         # 404 error screen
+│   └── tasks-context.tsx      # Global state management
+├── assets/
+│   └── fonts/
+├── components/
+├── constants/
+├── hooks/
+└── package.json
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Future Enhancements
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Potential features for future versions:
+- Task categories and filtering
+- Due dates and reminders
+- Data persistence with AsyncStorage
+- Task search functionality
+- Export/import task lists
+- Custom themes and colors
