@@ -22,7 +22,7 @@ The app features two main screens:
 
 | Task Tab | Stats Tab |
 |------------|-----------|
-| <img src="./screenshots/task_tab.png" alt="Tasks Tab" width="30%"> | <img src="./screenshots/stats_tab.png" alt="Stats Tab" width="30%"> |
+| <img src="./screenshots/task_tab.png" alt="Tasks Tab" width="60%"> | <img src="./screenshots/stats_tab.png" alt="Stats Tab" width="60%"> |
 
 ## Tech Stack
 
